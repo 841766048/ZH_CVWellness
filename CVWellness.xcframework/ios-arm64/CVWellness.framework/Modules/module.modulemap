@@ -1,0 +1,11 @@
+framework module CVWellness {
+  umbrella header "CVWellness.h"
+  export *
+
+  module * { export * }
+}
+
+module CVWellness.Swift {
+  header "CVWellness-Swift.h"
+  requires objc
+}

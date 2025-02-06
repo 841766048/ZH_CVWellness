@@ -1,0 +1,306 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CVWellness
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AMPopTip
+import AVFoundation
+import ActiveLabel
+import ActivitySDK
+import AsleepSDK
+import CHTCollectionViewWaterfallLayout
+@_exported import CVCommon
+@_exported import CVDesign
+@_exported import CVWellness
+import Combine
+import CombineCocoa
+import CombineExt
+import DGCharts
+import Defaults
+import DeveloperToolsSupport
+import FloatingPanel
+import Foundation
+import GSPlayer
+import IQKeyboardManagerSwift
+import IQKeyboardToolbarManager
+import KDCircularProgress
+import KTVHTTPCache
+import Kingfisher
+import LinkPresentation
+import Localize_Swift
+import MJRefresh
+import MediaPlayer
+import Moya
+import ObjectiveC
+import ParallaxHeader
+import Parchment
+import PassioNutritionAISDK
+import SVProgressHUD
+import SearchTextField
+import SnapKit
+import Swift
+import SwiftUI
+import SwifterSwift
+import TYCyclePagerView
+import UIKit
+import WebKit
+import YYImage
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import ObjectiveC.runtime
+public protocol FloatingViewDelegate : ObjectiveC.NSObjectProtocol {
+  func floatingViewDidBeginDragging(panGestureRecognizer: UIKit.UIPanGestureRecognizer)
+  func floatingViewDidEndDragging(panGestureRecognizer: UIKit.UIPanGestureRecognizer)
+  func floatingViewDidMove(panGestureRecognizer: UIKit.UIPanGestureRecognizer)
+  func floatingViewFinishedPartiallyHideAnimation()
+}
+extension CVWellness.FloatingViewDelegate {
+  public func floatingViewDidBeginDragging(panGestureRecognizer: UIKit.UIPanGestureRecognizer)
+  public func floatingViewDidEndDragging(panGestureRecognizer: UIKit.UIPanGestureRecognizer)
+  public func floatingViewDidMove(panGestureRecognizer: UIKit.UIPanGestureRecognizer)
+  public func floatingViewFinishedPartiallyHideAnimation()
+}
+@objc @_inheritsConvenienceInitializers public class CVCellButtonModel : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CVWellness.CVCellButtonModel : CVDesign.CVTableViewCellModelProtocol {
+  public func cellClass(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> Swift.AnyClass?
+  public func cellHeigh(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+@objc open class BalloonMarker : DGCharts.MarkerImage {
+  @objc open var color: UIKit.UIColor
+  @objc open var arrowSize: CoreFoundation.CGSize
+  @objc open var insets: UIKit.UIEdgeInsets
+  @objc open var minimumSize: CoreFoundation.CGSize
+  @objc public init(color: UIKit.UIColor, insets: UIKit.UIEdgeInsets)
+  @objc override open func offsetForDrawing(atPoint point: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  @objc override open func draw(context: CoreGraphics.CGContext, point: CoreFoundation.CGPoint)
+  @objc override open func refreshContent(entry: DGCharts.ChartDataEntry, highlight: DGCharts.Highlight)
+  @objc open func setLabel(_ newLabel: Foundation.NSAttributedString)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class CVWellness {
+  final public class func configuration(_ completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
+  final public class func getViewController() -> UIKit.UIViewController
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CVHorizontalScrollView : CVDesign.CVBaseView {
+  @_Concurrency.MainActor @preconcurrency public func removeAllItemView()
+  @_Concurrency.MainActor @preconcurrency public func addItem(_ item: CVWellness.CVHorizontalPaddingView)
+  @_Concurrency.MainActor @preconcurrency public func resetToInitialPosition()
+  @_Concurrency.MainActor @preconcurrency public func scrollToItem(at index: Swift.Int, animated: Swift.Bool = false)
+  @objc deinit
+}
+extension PassioNutritionAISDK.PassioIngredient : CVDesign.CVTableViewCellModelProtocol {
+  public func cellClass(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> Swift.AnyClass?
+  public func cellHeigh(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CVCellAgreementCell : CVDesign.CVBaseTableViewCell {
+  @_Concurrency.MainActor @preconcurrency override public func setupUI()
+  @_Concurrency.MainActor @preconcurrency override public func layoutUI()
+  @_Concurrency.MainActor @preconcurrency override public func cellForRowAt(indexPath: Foundation.IndexPath, targetView: UIKit.UIView, model: Any, eventTransmissionBlock: CVDesign.CVEventTransmissionBlock?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Swift.String : CVDesign.CVHorizontalFilterProtocol {
+  public var cv_filter_title: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class CellAgreementClickModel {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class CellAgreementModel : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CVWellness.CellAgreementModel : CVDesign.CVTableViewCellModelProtocol {
+  public func cellClass(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> Swift.AnyClass?
+  public func cellHeigh(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+@objc @_inheritsConvenienceInitializers public class CVChallengeStartEndTimeModel : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CVWellness.CVChallengeStartEndTimeModel : CVDesign.CVTableViewCellModelProtocol {
+  public func cellClass(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> Swift.AnyClass?
+  public func cellHeigh(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+public protocol FloatingViewProtocol : ObjectiveC.NSObjectProtocol {
+  var component: CVWellness.FloatingViewProtocolComponent { get }
+  var isDraggable: Swift.Bool { get set }
+  var isAutoAdsorb: Swift.Bool { get set }
+  var adsorbableEdges: CVWellness.FloatingAdsorbableEdges { get set }
+  var adsorbPriority: CVWellness.FloatingAdsorbPriority { get set }
+  var adsorbAnimationDuration: Foundation.TimeInterval { get set }
+  var minAdsorbableSpacings: UIKit.UIEdgeInsets { get set }
+  var isAutoPartiallyHide: Swift.Bool { get set }
+  var partiallyHidePercent: CoreFoundation.CGFloat { get set }
+  var partiallyHideAnimationDuration: Foundation.TimeInterval { get set }
+  var floatingEdgeInsets: UIKit.UIEdgeInsets { get set }
+}
+extension CVWellness.FloatingViewProtocol where Self : UIKit.UIView {
+  public var isDraggable: Swift.Bool {
+    get
+    set
+  }
+  public var isAutoAdsorb: Swift.Bool {
+    get
+    set
+  }
+  public var adsorbableEdges: CVWellness.FloatingAdsorbableEdges {
+    get
+    set
+  }
+  public var adsorbPriority: CVWellness.FloatingAdsorbPriority {
+    get
+    set
+  }
+  public var adsorbAnimationDuration: Foundation.TimeInterval {
+    get
+    set
+  }
+  public var isAutoPartiallyHide: Swift.Bool {
+    get
+    set
+  }
+  public var partiallyHidePercent: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  public var partiallyHideAnimationDuration: Foundation.TimeInterval {
+    get
+    set
+  }
+  public var floatingEdgeInsets: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  public var minAdsorbableSpacings: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+}
+extension CVWellness.FloatingViewProtocol where Self : UIKit.UIView {
+  public func makeFloatingWindowKeyAndVisible(statusBarStyle: UIKit.UIStatusBarStyle = .default)
+  public func resignFloatingWindowKey()
+  public func updateFloatingWindowStatusBarStyle(to style: UIKit.UIStatusBarStyle)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CVHorizontalPaddingView : CVDesign.CVBaseView {
+  @_Concurrency.MainActor @preconcurrency public var titleLabel: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var isSelect: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var selectImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var noImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(padding: CoreFoundation.CGFloat, imageLeft: Swift.Bool = true, iconHiden: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency override public func setupUI()
+  @objc deinit
+}
+public protocol OptionItemView : UIKit.UIControl {
+  associatedtype T
+  func update(option: Self.T)
+}
+@_Concurrency.MainActor @preconcurrency public class OptionsGenericView<T, View> : CVDesign.CVBaseView where T : Swift.Equatable, T == View.T, View : CVWellness.OptionItemView {
+  @_Concurrency.MainActor @preconcurrency final public let current: CombineExt.CurrentValueRelay<[T]>
+  @_Concurrency.MainActor @preconcurrency public var multiSelection: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var axis: UIKit.NSLayoutConstraint.Axis {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(options: [T] = [])
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency override public func setupUI()
+  @_Concurrency.MainActor @preconcurrency override public func layoutUI()
+  @_Concurrency.MainActor @preconcurrency public func updateOptions(_ options: [T])
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak public var floatingDelegate: (any CVWellness.FloatingViewDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var floatingPanGesture: UIKit.UIPanGestureRecognizer? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public func addFloatingPanGestureRecognizer()
+}
+extension PassioNutritionAISDK.PassioFoodDataInfo : CVDesign.CVTableViewCellModelProtocol {
+  public func cellClass(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> Swift.AnyClass?
+  public func cellHeigh(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+public struct FloatingAdsorbableEdges : Swift.OptionSet {
+  public let rawValue: Swift.UInt
+  public init(rawValue: Swift.UInt)
+  public static let top: CVWellness.FloatingAdsorbableEdges
+  public static let left: CVWellness.FloatingAdsorbableEdges
+  public static let bottom: CVWellness.FloatingAdsorbableEdges
+  public static let right: CVWellness.FloatingAdsorbableEdges
+  public typealias ArrayLiteralElement = CVWellness.FloatingAdsorbableEdges
+  public typealias Element = CVWellness.FloatingAdsorbableEdges
+  public typealias RawValue = Swift.UInt
+}
+public enum FloatingAdsorbPriority : Swift.Int {
+  case horizontalHigher
+  case equal
+  case verticalHigher
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class FloatingViewProtocolComponent {
+  public init()
+  @objc deinit
+}
+extension PassioNutritionAISDK.PassioFoodItem : CVDesign.CVTableViewCellModelProtocol {
+  public func cellClass(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> Swift.AnyClass?
+  public func cellHeigh(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+@objc @_inheritsConvenienceInitializers public class CVChallengeTitleValueModel : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CVWellness.CVChallengeTitleValueModel : CVDesign.CVTableViewCellModelProtocol {
+  public func cellClass(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> Swift.AnyClass?
+  public func cellHeigh(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CVAgreementPreviewView : CVDesign.CVBaseView {
+  @_Concurrency.MainActor @preconcurrency override public func setupUI()
+  @_Concurrency.MainActor @preconcurrency override public func layoutUI()
+  @_Concurrency.MainActor @preconcurrency public static func showAgreementBottomSheet(_ url: Swift.String = "")
+  @objc deinit
+}
+extension CVWellness.CVAgreementPreviewView : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+}
+extension CVWellness.CVAgreementPreviewView : WebKit.WKUIDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers public class CVChallengeTitleModel : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CVWellness.CVChallengeTitleModel : CVDesign.CVTableViewCellModelProtocol {
+  public func cellClass(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> Swift.AnyClass?
+  public func cellHeigh(_ tableView: UIKit.UITableView, indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+extension CVWellness.FloatingAdsorbPriority : Swift.Equatable {}
+extension CVWellness.FloatingAdsorbPriority : Swift.Hashable {}
+extension CVWellness.FloatingAdsorbPriority : Swift.RawRepresentable {}
