@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/841766048/ZH_CVWellness.git.git", :tag => "#{spec.version}" }
 
 
-  spec.ios.vendored_frameworks = 'CVWellness.xcframework'
+  spec.ios.vendored_frameworks = 'CVWellness.xcframework', 'AsleepSDK.xcframework', 'PassioNutritionAISDK.xcframework'
 
 
   spec.dependency 'CombineExt'
