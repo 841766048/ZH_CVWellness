@@ -1,0 +1,4 @@
+framework module AsleepSDK {
+  header "AsleepSDK-Swift.h"
+  requires objc
+}

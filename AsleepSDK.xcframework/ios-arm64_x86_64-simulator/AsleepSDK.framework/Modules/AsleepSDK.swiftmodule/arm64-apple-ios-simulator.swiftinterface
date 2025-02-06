@@ -1,0 +1,445 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AsleepSDK
+import AVFoundation
+import Accelerate
+import Combine
+import CoreFoundation
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension AsleepSDK.Asleep.Reports {
+  final public func report(sessionId: Swift.String, completionBlock: @escaping (AsleepSDK.Asleep.Model.Report?, AsleepSDK.Asleep.AsleepError?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func report(sessionId: Swift.String) async throws -> AsleepSDK.Asleep.Model.Report
+  #endif
+  final public func reports(fromDate: Swift.String, toDate: Swift.String, orderBy: AsleepSDK.Asleep.Model.OrderBy = .descending, offset: Swift.Int = 0, limit: Swift.Int = 20, completionBlock: @escaping ([AsleepSDK.Asleep.Model.SleepSession]?, AsleepSDK.Asleep.AsleepError?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func reports(fromDate: Swift.String, toDate: Swift.String, orderBy: AsleepSDK.Asleep.Model.OrderBy = .descending, offset: Swift.Int = 0, limit: Swift.Int = 20) async throws -> [AsleepSDK.Asleep.Model.SleepSession]
+  #endif
+  final public func deleteReport(sessionId: Swift.String, completionBlock: @escaping (AsleepSDK.Asleep.AsleepError?) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func deleteReport(sessionId: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func getAverageReport(fromDate: Swift.String, toDate: Swift.String) async throws -> AsleepSDK.Asleep.Model.AverageReport
+  #endif
+  final public func getAverageReport(fromDate: Swift.String, toDate: Swift.String, completionBlock: @escaping (AsleepSDK.Asleep.Model.AverageReport?, AsleepSDK.Asleep.AsleepError?) -> Swift.Void)
+}
+extension AsleepSDK.Asleep.SleepTrackingManager {
+  public struct TrackingStatus {
+    public var sessionId: Swift.String?
+  }
+}
+extension AsleepSDK.Asleep {
+  public struct Config {
+  }
+}
+public protocol AsleepConfigDelegate {
+  func userDidJoin(userId: Swift.String, config: AsleepSDK.Asleep.Config)
+  func didFailUserJoin(error: AsleepSDK.Asleep.AsleepError)
+  func userDidDelete(userId: Swift.String)
+}
+extension AsleepSDK.Asleep {
+  @_hasMissingDesignatedInitializers final public class Recorder {
+    @objc deinit
+  }
+}
+extension AsleepSDK.Asleep.SleepTrackingManager {
+  final public func startTracking()
+  final public func resumeTracking()
+  final public func stopTracking()
+  final public func requestAnalysis()
+  final public func getTrackingStatus() -> AsleepSDK.Asleep.SleepTrackingManager.TrackingStatus
+}
+public protocol AsleepSleepTrackingManagerDelegate {
+  func didCreate()
+  func didUpload(sequence: Swift.Int)
+  func didClose(sessionId: Swift.String)
+  func didFail(error: AsleepSDK.Asleep.AsleepError)
+  func didInterrupt()
+  func didResume()
+  func micPermissionWasDenied()
+  func analysing(session: AsleepSDK.Asleep.Model.Session)
+}
+extension AsleepSDK.Asleep {
+  @_hasMissingDesignatedInitializers final public class SleepTrackingManager {
+    @objc deinit
+  }
+}
+extension AsleepSDK.Asleep.SleepTrackingManager : AsleepSDK.AsleepRecordingDelegate {
+  final public func recordedData(_ data: Foundation.Data, sequence: Swift.Int)
+  final public func didFail(error: AsleepSDK.Asleep.AsleepError)
+  final public func didInterrupt()
+  final public func didResume()
+  final public func micPermissionWasDenied()
+}
+extension AsleepSDK.Asleep {
+  @_hasMissingDesignatedInitializers final public class Preprocessor {
+    @objc deinit
+  }
+}
+extension AsleepSDK.Asleep.Preprocessor {
+  public enum PreprocessorError : Swift.Error {
+    case pcmFormat(description: Swift.String)
+    case melFormat
+    case channelData
+    case noiseReduction
+    case convertMel
+    case arrayLength
+    case melFile
+    case system(error: any Swift.Error)
+  }
+}
+extension AsleepSDK.Asleep.Preprocessor {
+  final public func convert(from path: Foundation.URL) throws -> Foundation.URL
+  final public func convert(from array: [Swift.Float], into melPath: Foundation.URL) throws
+}
+public enum Asleep {
+}
+extension AsleepSDK.Asleep {
+  public enum Model {
+  }
+}
+extension AsleepSDK.Asleep.Model {
+  public struct Report : Swift.Codable, Swift.CustomStringConvertible {
+    public let timezone: Swift.String
+    public let peculiarities: [AsleepSDK.Asleep.Model.Peculiarity]
+    public let missingDataRatio: Swift.Float
+    public let session: AsleepSDK.Asleep.Model.Session
+    public let stat: AsleepSDK.Asleep.Model.Stat?
+    public var description: Swift.String {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Session : Swift.Codable, Swift.CustomStringConvertible {
+    public let id: Swift.String
+    public let state: AsleepSDK.Asleep.Model.State
+    public let startTime: Foundation.Date
+    public let endTime: Foundation.Date?
+    public let unexpectedEndTime: Foundation.Date?
+    public let createdTimezone: Swift.String
+    public let sleepStages: [Swift.Int]?
+    public let breathStages: [Swift.Int]?
+    public let snoringStages: [Swift.Int]?
+    public var description: Swift.String {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Stat : Swift.Codable, Swift.CustomStringConvertible {
+    public let sleepLatency: Swift.Int?
+    public let wakeupLatency: Swift.Int?
+    public let sleepTime: Foundation.Date?
+    public let wakeTime: Foundation.Date?
+    public let lightLatency: Swift.Int?
+    public let deepLatency: Swift.Int?
+    public let remLatency: Swift.Int?
+    public let timeInWake: Swift.Int?
+    public let timeInSleep: Swift.Int?
+    public let timeInBed: Swift.Int?
+    public let timeInSleepPeriod: Swift.Int?
+    public let timeInRem: Swift.Int?
+    public let timeInLight: Swift.Int?
+    public let timeInDeep: Swift.Int?
+    public let timeInStableBreath: Swift.Int?
+    public let timeInUnstableBreath: Swift.Int?
+    public let timeInSnoring: Swift.Int?
+    public let timeInNoSnoring: Swift.Int?
+    public let sleepEfficiency: Swift.Float?
+    public let wakeRatio: Swift.Float?
+    public let sleepRatio: Swift.Float?
+    public let remRatio: Swift.Float?
+    public let lightRatio: Swift.Float?
+    public let deepRatio: Swift.Float?
+    public let stableBreathRatio: Swift.Float?
+    public let unstableBreathRatio: Swift.Float?
+    public let snoringRatio: Swift.Float?
+    public let noSnoringRatio: Swift.Float?
+    public let unstableBreathCount: Swift.Int?
+    public let breathingPattern: AsleepSDK.Asleep.Model.BreathingPattern?
+    public let breathingIndex: Swift.Float?
+    public let sleepCycle: Swift.Int?
+    public let sleepCycleCount: Swift.Int?
+    public let sleepCycleTime: [Foundation.Date]?
+    public let wasoCount: Swift.Int?
+    public let longestWaso: Swift.Int?
+    public let sleepIndex: Swift.Int?
+    public let snoringCount: Swift.Int?
+    public var description: Swift.String {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum Peculiarity : Swift.String, Swift.Codable, Swift.CustomStringConvertible {
+    case inProgress
+    case neverSlept
+    case tooShortForAnalysis
+    case tooLongForAnalysis
+    case tooManyDefectsInSleepStages
+    case noBreathingStability
+    case noRealtimePolling
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum BreathingPattern : Swift.String, Swift.Codable, Swift.CustomStringConvertible {
+    case stableBreath
+    case mildlyUnstableBreath
+    case moderatelyUnstableBreath
+    case severelyUnstableBreath
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension AsleepSDK.Asleep {
+  public static func createRecorder(with delegate: any AsleepSDK.AsleepRecordingDelegate) -> AsleepSDK.Asleep.Recorder?
+}
+extension AsleepSDK.Asleep {
+  public struct DeveloperMode {
+    public static var isOn: Swift.Bool
+  }
+}
+extension AsleepSDK.Asleep {
+  public static func initAsleepConfig(apiKey: Swift.String, userId: Swift.String?, baseUrl: Foundation.URL? = nil, callbackUrl: Foundation.URL? = nil, service: Swift.String? = nil, delegate: any AsleepSDK.AsleepConfigDelegate)
+  public static func deleteUser(config: AsleepSDK.Asleep.Config)
+}
+extension AsleepSDK.Asleep {
+  public static func createSleepTrackingManager(config: AsleepSDK.Asleep.Config, delegate: any AsleepSDK.AsleepSleepTrackingManagerDelegate) -> AsleepSDK.Asleep.SleepTrackingManager
+  public static func createReports(config: AsleepSDK.Asleep.Config) -> AsleepSDK.Asleep.Reports
+}
+extension AsleepSDK.Asleep {
+  public static func setDebugLoggerDelegate(_ delegate: any AsleepSDK.AsleepDebugLoggerDelegate)
+}
+public protocol AsleepDebugLoggerDelegate {
+  func didPrint(message: Swift.String)
+}
+extension AsleepSDK.Asleep {
+  public enum AsleepError : Swift.Error, Swift.CustomStringConvertible {
+    case shouldResume
+    case over24hours
+    case audioInitializationFailed
+    case unsupportedInDeveloperMode
+    case cannotActivateInBackground
+    case startTrackingNetworkFail(code: Swift.Int, message: Swift.String?)
+    case stopTrackingNetworkFail(code: Swift.Int, message: Swift.String?)
+    case httpStatus(code: Swift.Int, errorCode: Swift.Int?, message: Swift.String?)
+    case responseResult(endpoint: Swift.String)
+    case unknown(systemError: any Swift.Error)
+    public var description: Swift.String {
+      get
+    }
+  }
+}
+extension AsleepSDK.Asleep.Model {
+  public struct AverageReport : Swift.Codable, Swift.CustomStringConvertible {
+    public let period: AsleepSDK.Asleep.Model.Period
+    public let peculiarities: [AsleepSDK.Asleep.Model.Peculiarity]
+    public let averageStats: AsleepSDK.Asleep.Model.AverageStats?
+    public let neverSleptSessions: [AsleepSDK.Asleep.Model.NeverSleptSession]
+    public let sleptSessions: [AsleepSDK.Asleep.Model.SleptSession]
+    public var description: Swift.String {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Period : Swift.Codable, Swift.CustomStringConvertible {
+    public let timezone: Swift.String
+    public let startDate: Foundation.Date
+    public let endDate: Foundation.Date
+    public init(from decoder: any Swift.Decoder) throws
+    public var description: Swift.String {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+  }
+  public struct AverageStats : Swift.Codable, Swift.CustomStringConvertible {
+    public let startTime: Swift.String
+    public let endTime: Swift.String
+    public let sleepTime: Swift.String
+    public let wakeTime: Swift.String
+    public let sleepLatency: Swift.Int
+    public let wakeupLatency: Swift.Int
+    public let timeInBed: Swift.Int
+    public let timeInSleepPeriod: Swift.Int
+    public let timeInSleep: Swift.Int
+    public let timeInWake: Swift.Int
+    public let timeInLight: Swift.Int?
+    public let timeInDeep: Swift.Int?
+    public let timeInRem: Swift.Int?
+    public let timeInStableBreath: Swift.Int?
+    public let timeInUnstableBreath: Swift.Int?
+    public let timeInSnoring: Swift.Int?
+    public let timeInNoSnoring: Swift.Int?
+    public let sleepEfficiency: Swift.Float
+    public let wakeRatio: Swift.Float
+    public let sleepRatio: Swift.Float
+    public let lightRatio: Swift.Float?
+    public let deepRatio: Swift.Float?
+    public let remRatio: Swift.Float?
+    public let stableBreathRatio: Swift.Float?
+    public let unstableBreathRatio: Swift.Float?
+    public let snoringRatio: Swift.Float?
+    public let noSnoringRatio: Swift.Float?
+    public let breathingIndex: Swift.Float?
+    public let wasoCount: Swift.Int?
+    public let longestWaso: Swift.Int?
+    public let unstableBreathCount: Swift.Int?
+    public let sleepCycleCount: Swift.Int?
+    public let snoringCount: Swift.Int?
+    public var description: Swift.String {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct NeverSleptSession : Swift.Codable, Swift.CustomStringConvertible {
+    public let id: Swift.String
+    public let startTime: Foundation.Date
+    public let endTime: Foundation.Date
+    public let completedTime: Foundation.Date
+    public var description: Swift.String {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct SleptSession : Swift.Codable {
+    public let id: Swift.String
+    public let createdTimezone: Swift.String
+    public let startTime: Foundation.Date
+    public let endTime: Foundation.Date
+    public let completedTime: Foundation.Date
+    public let sleepEfficiency: Swift.Float
+    public let sleepLatency: Swift.Int?
+    public let wakeupLatency: Swift.Int?
+    public let lightLatency: Swift.Int?
+    public let deepLatency: Swift.Int?
+    public let remLatency: Swift.Int?
+    public let sleepTime: Foundation.Date?
+    public let wakeTime: Foundation.Date?
+    public let timeInWake: Swift.Int
+    public let timeInSleepPeriod: Swift.Int
+    public let timeInSleep: Swift.Int
+    public let timeInBed: Swift.Int
+    public let timeInRem: Swift.Int?
+    public let timeInLight: Swift.Int?
+    public let timeInDeep: Swift.Int?
+    public let timeInStableBreath: Swift.Int?
+    public let timeInUnstableBreath: Swift.Int?
+    public let timeInSnoring: Swift.Int?
+    public let timeInNoSnoring: Swift.Int?
+    public let wakeRatio: Swift.Float
+    public let sleepRatio: Swift.Float
+    public let remRatio: Swift.Float?
+    public let lightRatio: Swift.Float?
+    public let deepRatio: Swift.Float?
+    public let stableBreathRatio: Swift.Float?
+    public let unstableBreathRatio: Swift.Float?
+    public let snoringRatio: Swift.Float?
+    public let noSnoringRatio: Swift.Float?
+    public let unstableBreathCount: Swift.Int?
+    public let breathingPattern: AsleepSDK.Asleep.Model.BreathingPattern?
+    public let breathingIndex: Swift.Float?
+    public let sleepCycle: Swift.Int?
+    public let sleepCycleCount: Swift.Int?
+    public let wasoCount: Swift.Int?
+    public let longestWaso: Swift.Int?
+    public let snoringCount: Swift.Int?
+    public var description: Swift.String {
+      get
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension AsleepSDK.Asleep.Model {
+  public struct ReportList : Swift.Decodable {
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct SleepSession : Swift.Decodable {
+    public let sessionId: Swift.String
+    public let state: AsleepSDK.Asleep.Model.State
+    public let sessionStartTime: Foundation.Date
+    public let sessionEndTime: Foundation.Date?
+    public let createdTimezone: Swift.String
+    public let unexpectedEndTime: Foundation.Date?
+    public let lastReceivedSeqNum: Swift.Int?
+    public let timeInBed: Swift.Int?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension AsleepSDK.Asleep.Model {
+  public enum State : Swift.String, Swift.Codable, Swift.CustomStringConvertible {
+    case open
+    case closed
+    case complete
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum OrderBy : Swift.String, Swift.Codable, Swift.CustomStringConvertible {
+    case ascending
+    case descending
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension AsleepSDK.Asleep {
+  @_hasMissingDesignatedInitializers final public class Reports {
+    @objc deinit
+  }
+}
+extension AsleepSDK.Asleep.Recorder {
+  final public func startRecording()
+  final public func stopRecording()
+}
+public protocol AsleepRecordingDelegate {
+  func recordedData(_ data: Foundation.Data, sequence: Swift.Int)
+  func didFail(error: AsleepSDK.Asleep.AsleepError)
+  func didInterrupt()
+  func didResume()
+  func micPermissionWasDenied()
+}
+extension AsleepSDK.Asleep.Model.Peculiarity : Swift.Equatable {}
+extension AsleepSDK.Asleep.Model.Peculiarity : Swift.Hashable {}
+extension AsleepSDK.Asleep.Model.Peculiarity : Swift.RawRepresentable {}
+extension AsleepSDK.Asleep.Model.BreathingPattern : Swift.Equatable {}
+extension AsleepSDK.Asleep.Model.BreathingPattern : Swift.Hashable {}
+extension AsleepSDK.Asleep.Model.BreathingPattern : Swift.RawRepresentable {}
+extension AsleepSDK.Asleep.Model.State : Swift.Equatable {}
+extension AsleepSDK.Asleep.Model.State : Swift.Hashable {}
+extension AsleepSDK.Asleep.Model.State : Swift.RawRepresentable {}
+extension AsleepSDK.Asleep.Model.OrderBy : Swift.Equatable {}
+extension AsleepSDK.Asleep.Model.OrderBy : Swift.Hashable {}
+extension AsleepSDK.Asleep.Model.OrderBy : Swift.RawRepresentable {}
