@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZH_CVWellness"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "ZH_CVWellness 测试工程文件，到期会进行删除"
 
   spec.homepage     = "https://github.com/841766048/ZH_CVWellness"
