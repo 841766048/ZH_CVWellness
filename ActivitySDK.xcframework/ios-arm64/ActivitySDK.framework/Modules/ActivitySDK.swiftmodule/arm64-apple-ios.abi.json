@@ -1,0 +1,3772 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ActivitySDK",
+    "printedName": "ActivitySDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Authority",
+        "printedName": "Authority",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "requestHealthKitAuthority",
+            "printedName": "requestHealthKitAuthority(types:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ActivitySDK.ActivitySDKType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivitySDKType",
+                    "printedName": "ActivitySDK.ActivitySDKType",
+                    "usr": "s:11ActivitySDK0A7SDKTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK9AuthorityC016requestHealthKitC05types10completionySayAA0A7SDKTypeOG_ySb_s5Error_pSgtctFZ",
+            "mangledName": "$s11ActivitySDK9AuthorityC016requestHealthKitC05types10completionySayAA0A7SDKTypeOG_ySb_s5Error_pSgtctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkAuthorizationStatus",
+            "printedName": "checkAuthorizationStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HKAuthorizationStatus",
+                "printedName": "HealthKit.HKAuthorizationStatus",
+                "usr": "c:@E@HKAuthorizationStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK9AuthorityC24checkAuthorizationStatusSo015HKAuthorizationF0VyFZ",
+            "mangledName": "$s11ActivitySDK9AuthorityC24checkAuthorizationStatusSo015HKAuthorizationF0VyFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK9AuthorityC",
+        "mangledName": "$s11ActivitySDK9AuthorityC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EnumCollection",
+        "printedName": "EnumCollection",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allValues",
+            "printedName": "allValues",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ActivitySDK14EnumCollectionP9allValuesSayxGvpZ",
+            "mangledName": "$s11ActivitySDK14EnumCollectionP9allValuesSayxGvpZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ActivitySDK14EnumCollectionP9allValuesSayxGvgZ",
+                "mangledName": "$s11ActivitySDK14EnumCollectionP9allValuesSayxGvgZ",
+                "moduleName": "ActivitySDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : ActivitySDK.EnumCollection>",
+                "sugared_genericSig": "<Self where Self : ActivitySDK.EnumCollection>",
+                "static": true,
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allValues",
+            "printedName": "allValues",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ActivitySDK14EnumCollectionPAAE9allValuesSayxGvpZ",
+            "mangledName": "$s11ActivitySDK14EnumCollectionPAAE9allValuesSayxGvpZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ActivitySDK14EnumCollectionPAAE9allValuesSayxGvgZ",
+                "mangledName": "$s11ActivitySDK14EnumCollectionPAAE9allValuesSayxGvgZ",
+                "moduleName": "ActivitySDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : ActivitySDK.EnumCollection>",
+                "sugared_genericSig": "<Self where Self : ActivitySDK.EnumCollection>",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11ActivitySDK14EnumCollectionP",
+        "mangledName": "$s11ActivitySDK14EnumCollectionP",
+        "moduleName": "ActivitySDK",
+        "genericSig": "<τ_0_0 : Swift.CaseIterable, τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Self : Swift.CaseIterable, Self : Swift.Hashable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Workout",
+        "printedName": "Workout",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchWorkout",
+            "printedName": "fetchWorkout(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK7WorkoutC05fetchC09startDate03endF010completiony10Foundation0F0V_AJySdctFZ",
+            "mangledName": "$s11ActivitySDK7WorkoutC05fetchC09startDate03endF010completiony10Foundation0F0V_AJySdctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK7WorkoutC",
+        "mangledName": "$s11ActivitySDK7WorkoutC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SleepAnalysis",
+        "printedName": "SleepAnalysis",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchSleepAnalysis",
+            "printedName": "fetchSleepAnalysis(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK13SleepAnalysisC05fetchcD09startDate03endG010completiony10Foundation0G0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK13SleepAnalysisC05fetchcD09startDate03endG010completiony10Foundation0G0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK13SleepAnalysisC",
+        "mangledName": "$s11ActivitySDK13SleepAnalysisC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ActivitySDKType",
+        "printedName": "ActivitySDKType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "all",
+            "printedName": "all",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActivitySDK.ActivitySDKType.Type) -> ActivitySDK.ActivitySDKType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivitySDKType",
+                    "printedName": "ActivitySDK.ActivitySDKType",
+                    "usr": "s:11ActivitySDK0A7SDKTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActivitySDK.ActivitySDKType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActivitySDKType",
+                        "printedName": "ActivitySDK.ActivitySDKType",
+                        "usr": "s:11ActivitySDK0A7SDKTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11ActivitySDK0A7SDKTypeO3allyA2CmF",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO3allyA2CmF",
+            "moduleName": "ActivitySDK"
+          },
+          {
+            "kind": "Var",
+            "name": "heartRate",
+            "printedName": "heartRate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActivitySDK.ActivitySDKType.Type) -> ActivitySDK.ActivitySDKType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivitySDKType",
+                    "printedName": "ActivitySDK.ActivitySDKType",
+                    "usr": "s:11ActivitySDK0A7SDKTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActivitySDK.ActivitySDKType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActivitySDKType",
+                        "printedName": "ActivitySDK.ActivitySDKType",
+                        "usr": "s:11ActivitySDK0A7SDKTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11ActivitySDK0A7SDKTypeO9heartRateyA2CmF",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO9heartRateyA2CmF",
+            "moduleName": "ActivitySDK"
+          },
+          {
+            "kind": "Var",
+            "name": "stepCount",
+            "printedName": "stepCount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActivitySDK.ActivitySDKType.Type) -> ActivitySDK.ActivitySDKType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivitySDKType",
+                    "printedName": "ActivitySDK.ActivitySDKType",
+                    "usr": "s:11ActivitySDK0A7SDKTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActivitySDK.ActivitySDKType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActivitySDKType",
+                        "printedName": "ActivitySDK.ActivitySDKType",
+                        "usr": "s:11ActivitySDK0A7SDKTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11ActivitySDK0A7SDKTypeO9stepCountyA2CmF",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO9stepCountyA2CmF",
+            "moduleName": "ActivitySDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sleepAnalysis",
+            "printedName": "sleepAnalysis",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActivitySDK.ActivitySDKType.Type) -> ActivitySDK.ActivitySDKType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivitySDKType",
+                    "printedName": "ActivitySDK.ActivitySDKType",
+                    "usr": "s:11ActivitySDK0A7SDKTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActivitySDK.ActivitySDKType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActivitySDKType",
+                        "printedName": "ActivitySDK.ActivitySDKType",
+                        "usr": "s:11ActivitySDK0A7SDKTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11ActivitySDK0A7SDKTypeO13sleepAnalysisyA2CmF",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO13sleepAnalysisyA2CmF",
+            "moduleName": "ActivitySDK"
+          },
+          {
+            "kind": "Var",
+            "name": "activeEnergyBurned",
+            "printedName": "activeEnergyBurned",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActivitySDK.ActivitySDKType.Type) -> ActivitySDK.ActivitySDKType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivitySDKType",
+                    "printedName": "ActivitySDK.ActivitySDKType",
+                    "usr": "s:11ActivitySDK0A7SDKTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActivitySDK.ActivitySDKType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActivitySDKType",
+                        "printedName": "ActivitySDK.ActivitySDKType",
+                        "usr": "s:11ActivitySDK0A7SDKTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11ActivitySDK0A7SDKTypeO18activeEnergyBurnedyA2CmF",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO18activeEnergyBurnedyA2CmF",
+            "moduleName": "ActivitySDK"
+          },
+          {
+            "kind": "Var",
+            "name": "appleExerciseTime",
+            "printedName": "appleExerciseTime",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActivitySDK.ActivitySDKType.Type) -> ActivitySDK.ActivitySDKType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivitySDKType",
+                    "printedName": "ActivitySDK.ActivitySDKType",
+                    "usr": "s:11ActivitySDK0A7SDKTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActivitySDK.ActivitySDKType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActivitySDKType",
+                        "printedName": "ActivitySDK.ActivitySDKType",
+                        "usr": "s:11ActivitySDK0A7SDKTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11ActivitySDK0A7SDKTypeO17appleExerciseTimeyA2CmF",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO17appleExerciseTimeyA2CmF",
+            "moduleName": "ActivitySDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ActivitySDKType",
+                "printedName": "ActivitySDK.ActivitySDKType",
+                "usr": "s:11ActivitySDK0A7SDKTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ActivitySDKType",
+                "printedName": "ActivitySDK.ActivitySDKType",
+                "usr": "s:11ActivitySDK0A7SDKTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK0A7SDKTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ActivitySDK0A7SDKTypeO9hashValueSivp",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO9hashValueSivp",
+            "moduleName": "ActivitySDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ActivitySDK0A7SDKTypeO9hashValueSivg",
+                "mangledName": "$s11ActivitySDK0A7SDKTypeO9hashValueSivg",
+                "moduleName": "ActivitySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK0A7SDKTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11ActivitySDK0A7SDKTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "ActivitySDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11ActivitySDK0A7SDKTypeO",
+        "mangledName": "$s11ActivitySDK0A7SDKTypeO",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ActivitySDK",
+        "printedName": "ActivitySDK",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setDebugMode",
+            "printedName": "setDebugMode(flag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC12setDebugMode4flagySb_tFZ",
+            "mangledName": "$s11ActivitySDKAAC12setDebugMode4flagySb_tFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestHealthKitAuthority",
+            "printedName": "requestHealthKitAuthority(types:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ActivitySDK.ActivitySDKType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivitySDKType",
+                    "printedName": "ActivitySDK.ActivitySDKType",
+                    "usr": "s:11ActivitySDK0A7SDKTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC25requestHealthKitAuthority5types10completionySayAA0A7SDKTypeOG_ySb_s5Error_pSgtctFZ",
+            "mangledName": "$s11ActivitySDKAAC25requestHealthKitAuthority5types10completionySayAA0A7SDKTypeOG_ySb_s5Error_pSgtctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkRequestAuthorizationStatus",
+            "printedName": "checkRequestAuthorizationStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HKAuthorizationStatus",
+                "printedName": "HealthKit.HKAuthorizationStatus",
+                "usr": "c:@E@HKAuthorizationStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC31checkRequestAuthorizationStatusSo015HKAuthorizationF0VyFZ",
+            "mangledName": "$s11ActivitySDKAAC31checkRequestAuthorizationStatusSo015HKAuthorizationF0VyFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadHealthDate",
+            "printedName": "uploadHealthDate(url:token:accountId:headers:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[[Swift.String : Swift.String]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : Swift.String]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC16uploadHealthDate3url5token9accountId7headers10completionySS_S2SSaySDyS2SGGSgySb_s5Error_pSgtctFZ",
+            "mangledName": "$s11ActivitySDKAAC16uploadHealthDate3url5token9accountId7headers10completionySS_S2SSaySDyS2SGGSgySb_s5Error_pSgtctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchDistanceWalking",
+            "printedName": "fetchDistanceWalking(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC20fetchDistanceWalking9startDate03endG010completiony10Foundation0G0V_AIySdctFZ",
+            "mangledName": "$s11ActivitySDKAAC20fetchDistanceWalking9startDate03endG010completiony10Foundation0G0V_AIySdctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchDistanceWalking1",
+            "printedName": "fetchDistanceWalking1(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC21fetchDistanceWalking19startDate03endG010completiony10Foundation0G0V_AIySdctFZ",
+            "mangledName": "$s11ActivitySDKAAC21fetchDistanceWalking19startDate03endG010completiony10Foundation0G0V_AIySdctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchEnergyBurned",
+            "printedName": "fetchEnergyBurned(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC17fetchEnergyBurned9startDate03endG010completiony10Foundation0G0V_AIySdctFZ",
+            "mangledName": "$s11ActivitySDKAAC17fetchEnergyBurned9startDate03endG010completiony10Foundation0G0V_AIySdctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchAppleExerciseTime",
+            "printedName": "fetchAppleExerciseTime(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC22fetchAppleExerciseTime9startDate03endH010completiony10Foundation0H0V_AIySdctFZ",
+            "mangledName": "$s11ActivitySDKAAC22fetchAppleExerciseTime9startDate03endH010completiony10Foundation0H0V_AIySdctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchWorkout",
+            "printedName": "fetchWorkout(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDKAAC12fetchWorkout9startDate03endF010completiony10Foundation0F0V_AIySdctFZ",
+            "mangledName": "$s11ActivitySDKAAC12fetchWorkout9startDate03endF010completiony10Foundation0F0V_AIySdctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDKAAC",
+        "mangledName": "$s11ActivitySDKAAC",
+        "moduleName": "ActivitySDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DateType",
+        "printedName": "DateType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "statistics",
+            "printedName": "statistics",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActivitySDK.DateType.Type) -> ActivitySDK.DateType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateType",
+                    "printedName": "ActivitySDK.DateType",
+                    "usr": "s:11ActivitySDK8DateTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActivitySDK.DateType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DateType",
+                        "printedName": "ActivitySDK.DateType",
+                        "usr": "s:11ActivitySDK8DateTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11ActivitySDK8DateTypeO10statisticsyA2CmF",
+            "mangledName": "$s11ActivitySDK8DateTypeO10statisticsyA2CmF",
+            "moduleName": "ActivitySDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sample",
+            "printedName": "sample",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ActivitySDK.DateType.Type) -> ActivitySDK.DateType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateType",
+                    "printedName": "ActivitySDK.DateType",
+                    "usr": "s:11ActivitySDK8DateTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ActivitySDK.DateType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DateType",
+                        "printedName": "ActivitySDK.DateType",
+                        "usr": "s:11ActivitySDK8DateTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11ActivitySDK8DateTypeO6sampleyA2CmF",
+            "mangledName": "$s11ActivitySDK8DateTypeO6sampleyA2CmF",
+            "moduleName": "ActivitySDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DateType",
+                "printedName": "ActivitySDK.DateType",
+                "usr": "s:11ActivitySDK8DateTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DateType",
+                "printedName": "ActivitySDK.DateType",
+                "usr": "s:11ActivitySDK8DateTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK8DateTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11ActivitySDK8DateTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ActivitySDK8DateTypeO9hashValueSivp",
+            "mangledName": "$s11ActivitySDK8DateTypeO9hashValueSivp",
+            "moduleName": "ActivitySDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ActivitySDK8DateTypeO9hashValueSivg",
+                "mangledName": "$s11ActivitySDK8DateTypeO9hashValueSivg",
+                "moduleName": "ActivitySDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK8DateTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11ActivitySDK8DateTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "ActivitySDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11ActivitySDK8DateTypeO",
+        "mangledName": "$s11ActivitySDK8DateTypeO",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DateHandle",
+        "printedName": "DateHandle",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "stepCountDateHandle",
+            "printedName": "stepCountDateHandle(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?, [[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([[Swift.String : Any]]?, [[Swift.String : Any]]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK10DateHandleC09stepCountcD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSg_AMtctFZ",
+            "mangledName": "$s11ActivitySDK10DateHandleC09stepCountcD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSg_AMtctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "heartRateDateHandle",
+            "printedName": "heartRateDateHandle(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?, [[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([[Swift.String : Any]]?, [[Swift.String : Any]]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK10DateHandleC09heartRatecD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSg_AMtctFZ",
+            "mangledName": "$s11ActivitySDK10DateHandleC09heartRatecD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSg_AMtctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sleepAnalysisDateHandle",
+            "printedName": "sleepAnalysisDateHandle(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK10DateHandleC013sleepAnalysiscD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK10DateHandleC013sleepAnalysiscD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "activeEnergyBurnedCountDateHandle",
+            "printedName": "activeEnergyBurnedCountDateHandle(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?, [[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([[Swift.String : Any]]?, [[Swift.String : Any]]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK10DateHandleC023activeEnergyBurnedCountcD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSg_AMtctFZ",
+            "mangledName": "$s11ActivitySDK10DateHandleC023activeEnergyBurnedCountcD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSg_AMtctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appleExerciseTimeCountDateHandle",
+            "printedName": "appleExerciseTimeCountDateHandle(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?, [[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([[Swift.String : Any]]?, [[Swift.String : Any]]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[[Swift.String : Any]]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[[Swift.String : Any]]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK10DateHandleC022appleExerciseTimeCountcD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSg_AMtctFZ",
+            "mangledName": "$s11ActivitySDK10DateHandleC022appleExerciseTimeCountcD005startC003endC010completiony10Foundation0C0V_AJySaySDySSypGGSg_AMtctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK10DateHandleC",
+        "mangledName": "$s11ActivitySDK10DateHandleC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HeartRate",
+        "printedName": "HeartRate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchStatisticsCollectionHeartRate",
+            "printedName": "fetchStatisticsCollectionHeartRate(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK9HeartRateC025fetchStatisticsCollectioncD09startDate03endI010completiony10Foundation0I0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK9HeartRateC025fetchStatisticsCollectioncD09startDate03endI010completiony10Foundation0I0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchSampleHeartRate",
+            "printedName": "fetchSampleHeartRate(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK9HeartRateC011fetchSamplecD09startDate03endH010completiony10Foundation0H0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK9HeartRateC011fetchSamplecD09startDate03endH010completiony10Foundation0H0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK9HeartRateC",
+        "mangledName": "$s11ActivitySDK9HeartRateC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Upload",
+        "printedName": "Upload",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "uploadHealthDate",
+            "printedName": "uploadHealthDate(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK6UploadC16uploadHealthDate05startF003endF010completiony10Foundation0F0V_AJySb_s5Error_pSgtctFZ",
+            "mangledName": "$s11ActivitySDK6UploadC16uploadHealthDate05startF003endF010completiony10Foundation0F0V_AJySb_s5Error_pSgtctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK6UploadC",
+        "mangledName": "$s11ActivitySDK6UploadC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppleExerciseTime",
+        "printedName": "AppleExerciseTime",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchStatisticsCollectionAppleExerciseTime",
+            "printedName": "fetchStatisticsCollectionAppleExerciseTime(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK17AppleExerciseTimeC025fetchStatisticsCollectioncdE09startDate03endJ010completiony10Foundation0J0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK17AppleExerciseTimeC025fetchStatisticsCollectioncdE09startDate03endJ010completiony10Foundation0J0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchSampleAppleExerciseTime",
+            "printedName": "fetchSampleAppleExerciseTime(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK17AppleExerciseTimeC011fetchSamplecdE09startDate03endI010completiony10Foundation0I0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK17AppleExerciseTimeC011fetchSamplecdE09startDate03endI010completiony10Foundation0I0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK17AppleExerciseTimeC",
+        "mangledName": "$s11ActivitySDK17AppleExerciseTimeC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ActiveEnergyBurned",
+        "printedName": "ActiveEnergyBurned",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchStatisticsCollectionActiveEnergyBurned",
+            "printedName": "fetchStatisticsCollectionActiveEnergyBurned(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK18ActiveEnergyBurnedC025fetchStatisticsCollectioncdE09startDate03endJ010completiony10Foundation0J0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK18ActiveEnergyBurnedC025fetchStatisticsCollectioncdE09startDate03endJ010completiony10Foundation0J0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchSampleActiveEnergyBurned",
+            "printedName": "fetchSampleActiveEnergyBurned(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK18ActiveEnergyBurnedC011fetchSamplecdE09startDate03endI010completiony10Foundation0I0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK18ActiveEnergyBurnedC011fetchSamplecdE09startDate03endI010completiony10Foundation0I0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK18ActiveEnergyBurnedC",
+        "mangledName": "$s11ActivitySDK18ActiveEnergyBurnedC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "ActivitySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StepCount",
+        "printedName": "StepCount",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchStatisticsCollectionStepCount",
+            "printedName": "fetchStatisticsCollectionStepCount(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK9StepCountC025fetchStatisticsCollectioncD09startDate03endI010completiony10Foundation0I0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK9StepCountC025fetchStatisticsCollectioncD09startDate03endI010completiony10Foundation0I0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchSampleStepCount",
+            "printedName": "fetchSampleStepCount(startDate:endDate:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([[Swift.String : Any]]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[[Swift.String : Any]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[[Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11ActivitySDK9StepCountC011fetchSamplecD09startDate03endH010completiony10Foundation0H0V_AJySaySDySSypGGSgctFZ",
+            "mangledName": "$s11ActivitySDK9StepCountC011fetchSamplecD09startDate03endH010completiony10Foundation0H0V_AJySaySDySSypGGSgctFZ",
+            "moduleName": "ActivitySDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11ActivitySDK9StepCountC",
+        "mangledName": "$s11ActivitySDK9StepCountC",
+        "moduleName": "ActivitySDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Date",
+        "printedName": "Date",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "calendar",
+            "printedName": "calendar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Calendar",
+                "printedName": "Foundation.Calendar",
+                "usr": "s:10Foundation8CalendarV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation4DateV11ActivitySDKE8calendarAA8CalendarVvp",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE8calendarAA8CalendarVvp",
+            "moduleName": "ActivitySDK",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Calendar",
+                    "printedName": "Foundation.Calendar",
+                    "usr": "s:10Foundation8CalendarV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation4DateV11ActivitySDKE8calendarAA8CalendarVvg",
+                "mangledName": "$s10Foundation4DateV11ActivitySDKE8calendarAA8CalendarVvg",
+                "moduleName": "ActivitySDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "yesterday",
+            "printedName": "yesterday",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation4DateV11ActivitySDKE9yesterdayACvp",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE9yesterdayACvp",
+            "moduleName": "ActivitySDK",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation4DateV11ActivitySDKE9yesterdayACvg",
+                "mangledName": "$s10Foundation4DateV11ActivitySDKE9yesterdayACvg",
+                "moduleName": "ActivitySDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tomorrow",
+            "printedName": "tomorrow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation4DateV11ActivitySDKE8tomorrowACvp",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE8tomorrowACvp",
+            "moduleName": "ActivitySDK",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation4DateV11ActivitySDKE8tomorrowACvg",
+                "mangledName": "$s10Foundation4DateV11ActivitySDKE8tomorrowACvg",
+                "moduleName": "ActivitySDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unix13Timestamp",
+            "printedName": "unix13Timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation4DateV11ActivitySDKE15unix13Timestamps5Int64Vvp",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE15unix13Timestamps5Int64Vvp",
+            "moduleName": "ActivitySDK",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation4DateV11ActivitySDKE15unix13Timestamps5Int64Vvg",
+                "mangledName": "$s10Foundation4DateV11ActivitySDKE15unix13Timestamps5Int64Vvg",
+                "moduleName": "ActivitySDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toLocaleString",
+            "printedName": "toLocaleString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10Foundation4DateV11ActivitySDKE14toLocaleStringSSyF",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE14toLocaleStringSSyF",
+            "moduleName": "ActivitySDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adding",
+            "printedName": "adding(_:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Component",
+                "printedName": "Foundation.Calendar.Component",
+                "usr": "s:10Foundation8CalendarV9ComponentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10Foundation4DateV11ActivitySDKE6adding_5valueAcA8CalendarV9ComponentO_SitF",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE6adding_5valueAcA8CalendarV9ComponentO_SitF",
+            "moduleName": "ActivitySDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(_:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Component",
+                "printedName": "Foundation.Calendar.Component",
+                "usr": "s:10Foundation8CalendarV9ComponentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10Foundation4DateV11ActivitySDKE3add_5valueyAA8CalendarV9ComponentO_SitF",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE3add_5valueyAA8CalendarV9ComponentO_SitF",
+            "moduleName": "ActivitySDK",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "end",
+            "printedName": "end(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Component",
+                "printedName": "Foundation.Calendar.Component",
+                "usr": "s:10Foundation8CalendarV9ComponentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10Foundation4DateV11ActivitySDKE3end2ofAcA8CalendarV9ComponentO_tF",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE3end2ofAcA8CalendarV9ComponentO_tF",
+            "moduleName": "ActivitySDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10Foundation4DateV11ActivitySDKE5startACyF",
+            "mangledName": "$s10Foundation4DateV11ActivitySDKE5startACyF",
+            "moduleName": "ActivitySDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation4DateV",
+        "mangledName": "$s10Foundation4DateV",
+        "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Stride",
+                "printedName": "Stride",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/zhanghaibin\/Desktop\/远程工作\/activity-tracking-sdk-ios\/ActivitySDK\/Classes\/ActivitySDK.swift",
+      "kind": "StringLiteral",
+      "offset": 324,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhanghaibin\/Desktop\/远程工作\/activity-tracking-sdk-ios\/ActivitySDK\/Classes\/ActivitySDK.swift",
+      "kind": "StringLiteral",
+      "offset": 362,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhanghaibin\/Desktop\/远程工作\/activity-tracking-sdk-ios\/ActivitySDK\/Classes\/ActivitySDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 400,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhanghaibin\/Desktop\/远程工作\/activity-tracking-sdk-ios\/ActivitySDK\/Classes\/ActivitySDK.swift",
+      "kind": "StringLiteral",
+      "offset": 441,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

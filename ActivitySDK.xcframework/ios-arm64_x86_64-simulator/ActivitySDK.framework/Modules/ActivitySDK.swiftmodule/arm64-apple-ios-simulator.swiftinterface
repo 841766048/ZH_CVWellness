@@ -1,0 +1,124 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ActivitySDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+@_exported import ActivitySDK
+import Foundation
+import HealthKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class Authority {
+  public class func requestHealthKitAuthority(types: [ActivitySDKType], completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  public class func checkAuthorizationStatus() -> HealthKit.HKAuthorizationStatus
+  @objc deinit
+}
+public protocol EnumCollection : Swift.CaseIterable, Swift.Hashable {
+  static var allValues: [Self] { get }
+}
+extension EnumCollection {
+  public static var allValues: [Self] {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Workout {
+  public class func fetchWorkout(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ steps: Swift.Double) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SleepAnalysis {
+  public class func fetchSleepAnalysis(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  @objc deinit
+}
+public typealias DateItem = [Swift.String : Any]
+public enum ActivitySDKType {
+  case all
+  case heartRate
+  case stepCount
+  case sleepAnalysis
+  case activeEnergyBurned
+  case appleExerciseTime
+  public static func == (a: ActivitySDKType, b: ActivitySDKType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers open class ActivitySDK {
+  open class func setDebugMode(flag: Swift.Bool)
+  open class func requestHealthKitAuthority(types: [ActivitySDKType], completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  open class func checkRequestAuthorizationStatus() -> HealthKit.HKAuthorizationStatus
+  open class func uploadHealthDate(url: Swift.String, token: Swift.String, accountId: Swift.String, headers: [[Swift.String : Swift.String]]? = nil, completion: @escaping (_ success: Swift.Bool, _ error: (any Swift.Error)?) -> Swift.Void)
+  open class func fetchDistanceWalking(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ stepRetrieved: Swift.Double) -> Swift.Void)
+  open class func fetchDistanceWalking1(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ stepRetrieved: Swift.Double) -> Swift.Void)
+  open class func fetchEnergyBurned(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ stepRetrieved: Swift.Double) -> Swift.Void)
+  open class func fetchAppleExerciseTime(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ stepRetrieved: Swift.Double) -> Swift.Void)
+  open class func fetchWorkout(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ steps: Swift.Double) -> Swift.Void)
+  @objc deinit
+}
+public enum DateType {
+  case statistics
+  case sample
+  public static func == (a: DateType, b: DateType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class DateHandle {
+  public class func stepCountDateHandle(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ statistics: [DateItem]?, _ samples: [DateItem]?) -> Swift.Void)
+  public class func heartRateDateHandle(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ statistics: [DateItem]?, _ samples: [DateItem]?) -> Swift.Void)
+  public class func sleepAnalysisDateHandle(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ samples: [DateItem]?) -> Swift.Void)
+  public class func activeEnergyBurnedCountDateHandle(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ statistics: [DateItem]?, _ samples: [DateItem]?) -> Swift.Void)
+  public class func appleExerciseTimeCountDateHandle(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ statistics: [DateItem]?, _ samples: [DateItem]?) -> Swift.Void)
+  @objc deinit
+}
+extension Foundation.Date {
+  public var calendar: Foundation.Calendar {
+    get
+  }
+  public var yesterday: Foundation.Date {
+    get
+  }
+  public var tomorrow: Foundation.Date {
+    get
+  }
+  public var unix13Timestamp: Swift.Int64 {
+    get
+  }
+}
+extension Foundation.Date {
+  public func toLocaleString() -> Swift.String
+  public func adding(_ component: Foundation.Calendar.Component, value: Swift.Int) -> Foundation.Date
+  public mutating func add(_ component: Foundation.Calendar.Component, value: Swift.Int)
+  public func end(of component: Foundation.Calendar.Component) -> Foundation.Date
+  public func start() -> Foundation.Date
+}
+@_hasMissingDesignatedInitializers public class HeartRate {
+  public class func fetchStatisticsCollectionHeartRate(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  public class func fetchSampleHeartRate(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Upload {
+  public class func uploadHealthDate(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ success: Swift.Bool, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AppleExerciseTime {
+  public class func fetchStatisticsCollectionAppleExerciseTime(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  public class func fetchSampleAppleExerciseTime(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ActiveEnergyBurned {
+  public class func fetchStatisticsCollectionActiveEnergyBurned(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  public class func fetchSampleActiveEnergyBurned(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StepCount {
+  public class func fetchStatisticsCollectionStepCount(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  public class func fetchSampleStepCount(startDate: Foundation.Date, endDate: Foundation.Date, completion: @escaping (_ dateArr: [DateItem]?) -> Swift.Void)
+  @objc deinit
+}
+extension ActivitySDKType : Swift.Equatable {}
+extension ActivitySDKType : Swift.Hashable {}
+extension DateType : Swift.Equatable {}
+extension DateType : Swift.Hashable {}

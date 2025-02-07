@@ -32,8 +32,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/841766048/ZH_CVWellness.git.git", :tag => "#{spec.version}" }
 
 
-  spec.ios.vendored_frameworks = 'CVWellness.xcframework', 'AsleepSDK.xcframework', 'PassioNutritionAISDK.xcframework'
-
+  spec.ios.vendored_frameworks = 'CVWellness.xcframework', 'AsleepSDK.xcframework', 'PassioNutritionAISDK.xcframework', 'ActivitySDK.xcframework'
 
   spec.dependency 'CombineExt'
   spec.dependency 'CombineCocoa'
@@ -55,6 +54,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'Parchment', '4.0'
   spec.dependency 'AMPopTip'
   spec.dependency 'ParallaxHeader', '~> 3.0.0'
+  spec.dependency 'Lokalise', '1.0.0'
 
   spec.frameworks = 'Combine', 'UIKit', 'Foundation'
   # 工程配置

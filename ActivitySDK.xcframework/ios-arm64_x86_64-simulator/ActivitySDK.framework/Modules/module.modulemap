@@ -1,0 +1,11 @@
+framework module ActivitySDK {
+  umbrella header "ActivitySDK.h"
+  export *
+
+  module * { export * }
+}
+
+module ActivitySDK.Swift {
+  header "ActivitySDK-Swift.h"
+  requires objc
+}
