@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		pJdUnHwLWfH3j4NMs0H2tWPFd9c=
+		sVq//TZk+fpMOa3n9Z6n+i+FM6g=
 		</data>
 		<key>Headers/CVWellness-Swift.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BQ37Pxl7BLBP86VCBnncG2O5ZIk=
+		lhVhxbS2ojBGTWqup4yfpI3on2I=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fNQhRwd3bdOX15qwa1F+Q/LqfvQ=
+		wvoHk4wnWsRBAjcQFqBXyPltAdk=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0xf280rF7Lw5s6wBxnvGlGEHWMg=
+		ziJ7wbRt2j4u07eOV22djzeyz6M=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fNQhRwd3bdOX15qwa1F+Q/LqfvQ=
+		wvoHk4wnWsRBAjcQFqBXyPltAdk=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		txB8uyz4XszHlRKW6pUe1J1E15c=
+		DGUrZ1pkyrzwEMWiSSSER0B3lc0=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TaChRPE8T4tW0KKGebSaHeMSJjo=
+		jcGeDnJ0TDrdC70FUy7+3H0TELM=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		osb05U7XKPsa3YQ8JsdHKV02LmE=
+		3Ezn7x4Z0qu8ooidaeE2Q0SheTY=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TaChRPE8T4tW0KKGebSaHeMSJjo=
+		jcGeDnJ0TDrdC70FUy7+3H0TELM=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bx2kn5Z7POSreyhWYW5RLobgR80=
+		yh/FzqKAbC0Xk36Vcye7Js5VxVk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -130,7 +130,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3aGxkWi0qieZfmsJDI8nkfE6wPGbHXVhSmZZxVu9ISU=
+			au48p5Nwy1ik7XiMafbk2mpaTgebYUgsspFZRh+QEqk=
 			</data>
 		</dict>
 		<key>Headers/CVWellness-Swift.h</key>
@@ -165,28 +165,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IDnXasK1GO9P7jWqscoO1xj8pSgxYttdILhgi7yg710=
+			/1sK/VN8a8LnfyIMmEYtzRSkWlvv0pBow1Fi642Bbyc=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UM4PyzdEWYgYcQeGCgbDIRA19qBAfiTziLJgC67Zm0o=
+			R0u+6qy6UBdjAr3jmqxHjlp83ysU8S5yLk9js7u/AZ4=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IDnXasK1GO9P7jWqscoO1xj8pSgxYttdILhgi7yg710=
+			/1sK/VN8a8LnfyIMmEYtzRSkWlvv0pBow1Fi642Bbyc=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0udCrwVBN7GZhrVTEqDhqLjl7E8BpUBj/30uDBlh2+c=
+			0VSwk/uTEI4YLPyjj7U9AFmiIz3ZIvmKyZFpEta8nlw=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -200,28 +200,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fo+15h9Qz9nAXS2XW5ks7CGcYA8ueyihHEQx5KEJ7/c=
+			IxLuZ7PFD9VztdB3gOi/6tjELmvKw8GxaHfSQVFPaoA=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FxNz2VsKoPp2ZZ31vVmIffzHLFptoFpebNid2UZhKQs=
+			Y9J9xWinl7oPr+H2W27g/No7TCZLRU5dHUWdmg2KdQM=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fo+15h9Qz9nAXS2XW5ks7CGcYA8ueyihHEQx5KEJ7/c=
+			IxLuZ7PFD9VztdB3gOi/6tjELmvKw8GxaHfSQVFPaoA=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PjZgVS8LdCGCe6DPtmMGXUgZQ8RhLxm7hK3eMziPCmk=
+			Ge75KsjurZEPrCQlR4eCHw+IcZcEjeqh8EYrF50VnUk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
