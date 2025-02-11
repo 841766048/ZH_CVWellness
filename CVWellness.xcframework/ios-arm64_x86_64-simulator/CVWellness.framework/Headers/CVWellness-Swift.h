@@ -2586,6 +2586,25 @@ SWIFT_RESILIENT_CLASS("_TtC10CVWellness22CVHorizontalScrollView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
+@class UIViewController;
+
+SWIFT_CLASS("_TtC10CVWellness12CVWellnessOC")
+@interface CVWellnessOC : NSObject
+/// 初始化SDK配置
+/// \param headers 请求头
+///
++ (void)configurationSDKWithHeaders:(NSDictionary<NSString *, NSString *> * _Nonnull)headers baseURL:(NSString * _Nonnull)baseURL;
+/// 配置token
+/// \param token 
+///
++ (void)setTokeWithToken:(NSString * _Nonnull)token;
+/// 初始化界面配置
+/// \param completion 
+///
++ (void)initializingSDK:(void (^ _Nonnull)(UIViewController * _Nullable))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10CVWellness15CandleChartData")
 @interface CandleChartData : BarLineScatterCandleBubbleChartData
@@ -7478,6 +7497,25 @@ SWIFT_RESILIENT_CLASS("_TtC10CVWellness22CVHorizontalScrollView")
 @interface CVHorizontalScrollView : CVBaseView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+@class UIViewController;
+
+SWIFT_CLASS("_TtC10CVWellness12CVWellnessOC")
+@interface CVWellnessOC : NSObject
+/// 初始化SDK配置
+/// \param headers 请求头
+///
++ (void)configurationSDKWithHeaders:(NSDictionary<NSString *, NSString *> * _Nonnull)headers baseURL:(NSString * _Nonnull)baseURL;
+/// 配置token
+/// \param token 
+///
++ (void)setTokeWithToken:(NSString * _Nonnull)token;
+/// 初始化界面配置
+/// \param completion 
+///
++ (void)initializingSDK:(void (^ _Nonnull)(UIViewController * _Nullable))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

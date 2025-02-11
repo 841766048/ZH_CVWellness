@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/CVWellness-Swift.h</key>
 		<data>
-		TGOhnUdBd3GEkAo8KWpN9WZeN7M=
+		IkP96dRU/6Bh48Sa4yEbIxNPC0I=
 		</data>
 		<key>Headers/CVWellness.h</key>
 		<data>
@@ -30,43 +30,43 @@
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zkbA8O9CQZxz3i/MgE1N/9N2Ess=
+		E3p+aj8AqDxtNxpcpIoaAcJ/n30=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wvoHk4wnWsRBAjcQFqBXyPltAdk=
+		aNByG9GvudCLfj4aqB5f5Ybacjc=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ziJ7wbRt2j4u07eOV22djzeyz6M=
+		JQqj9PSo02hiFFUDsht09qSuLIA=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wvoHk4wnWsRBAjcQFqBXyPltAdk=
+		aNByG9GvudCLfj4aqB5f5Ybacjc=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DGUrZ1pkyrzwEMWiSSSER0B3lc0=
+		wq2mWPdwCeW73JHN2bODPLndlPw=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zkbA8O9CQZxz3i/MgE1N/9N2Ess=
+		E3p+aj8AqDxtNxpcpIoaAcJ/n30=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jcGeDnJ0TDrdC70FUy7+3H0TELM=
+		Qg/EFtwwPvi8cMysFIjTaJ6GxqM=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3Ezn7x4Z0qu8ooidaeE2Q0SheTY=
+		zT3/JE2vY6+d02+dFO/6gE2wuew=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jcGeDnJ0TDrdC70FUy7+3H0TELM=
+		Qg/EFtwwPvi8cMysFIjTaJ6GxqM=
 		</data>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yh/FzqKAbC0Xk36Vcye7Js5VxVk=
+		X7hw1+NMSayVjsPvwt7pFGl9GAE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h188QeVkcb5OLUP7SmP9etZju2mZFxoRNNs7cp7BrWE=
+			WKHte0kNT2eQDd9m63QSTaTOvyrL8AGlT5djr5zeY9c=
 			</data>
 		</dict>
 		<key>Headers/CVWellness.h</key>
@@ -158,70 +158,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FiG2qu5aCpfahEvqIp6pMCtdJNvoIdaS0v4LSOv8cgA=
+			Hij6tMlgXRuRgBTC/g3NTrhQxYjpTmQVBx04AYGHKiA=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/1sK/VN8a8LnfyIMmEYtzRSkWlvv0pBow1Fi642Bbyc=
+			a9jUfCfqFTEDT2OJsT+Y9LptiIx5IQbXc6IVtlP57yw=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R0u+6qy6UBdjAr3jmqxHjlp83ysU8S5yLk9js7u/AZ4=
+			gnkHwHt5STCM6sJYkT1mEwRsAW45RcIJBGXR3AsrI3I=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/1sK/VN8a8LnfyIMmEYtzRSkWlvv0pBow1Fi642Bbyc=
+			a9jUfCfqFTEDT2OJsT+Y9LptiIx5IQbXc6IVtlP57yw=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0VSwk/uTEI4YLPyjj7U9AFmiIz3ZIvmKyZFpEta8nlw=
+			VZOHJmIb6c86yuepk97Af0FkocBxe5kx9/d0EQPkRBI=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FiG2qu5aCpfahEvqIp6pMCtdJNvoIdaS0v4LSOv8cgA=
+			Hij6tMlgXRuRgBTC/g3NTrhQxYjpTmQVBx04AYGHKiA=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IxLuZ7PFD9VztdB3gOi/6tjELmvKw8GxaHfSQVFPaoA=
+			ivZpjZyvVOqNb2Hsoo5s1z5FmIsHOBxyMpBnCEqLmzY=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y9J9xWinl7oPr+H2W27g/No7TCZLRU5dHUWdmg2KdQM=
+			DaP8KBn4c1I7MpLcD2DoNwc1QsYbJJuiLqk4y2kUT2w=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IxLuZ7PFD9VztdB3gOi/6tjELmvKw8GxaHfSQVFPaoA=
+			ivZpjZyvVOqNb2Hsoo5s1z5FmIsHOBxyMpBnCEqLmzY=
 			</data>
 		</dict>
 		<key>Modules/CVWellness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ge75KsjurZEPrCQlR4eCHw+IcZcEjeqh8EYrF50VnUk=
+			Nl5r9QMgQ798gicVgSMT+wRk4giObAFv1IcHlFsaJ8g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

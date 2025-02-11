@@ -84,8 +84,6 @@ import UIKit
 import UIKit
 import UIKit
 import UIKit
-import UIKit
-import UIKit
 import WebKit
 import YYImage
 import _Concurrency
@@ -2473,6 +2471,13 @@ extension ChartDataEntryBase {
   @objc open var isDrawTopYLabelEntryEnabled: Swift.Bool {
     @objc get
   }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CVWellnessOC : ObjectiveC.NSObject {
+  @objc public static func configurationSDK(headers: [Swift.String : Swift.String], baseURL: Swift.String)
+  @objc public static func setToke(token: Swift.String)
+  @objc public static func initializingSDK(_ completion: @escaping (_ viewController: UIKit.UIViewController?) -> Swift.Void)
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class CVWellness {
